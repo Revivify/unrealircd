@@ -1,0 +1,10 @@
+version: 2
+jobs:
+   build:
+     docker:
+       - image: buildpack-deps:zesty
+     steps:
+       - checkout
+       - run: bash ./configure --prefix /rev/
+       - run: make
+       - run: make install
