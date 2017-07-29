@@ -2523,10 +2523,10 @@ ac_configure="$SHELL $ac_aux_dir/configure"  # Please don't use this var.
 
 
 
-if test "x$enable_dynamic_linking" = "x"; then
-	echo "Please use ./Config instead of ./configure"
-	exit 1
-fi
+#if test "x$enable_dynamic_linking" = "x"; then
+#	echo "Please use ./Config instead of ./configure"
+#	exit 1
+#fi
 
 orig_cflags="$CFLAGS"
 
